@@ -346,6 +346,38 @@ header {
 	box-shadow: 0px 10px 20px rgba(91, 91, 91, 0.2);
 }
 
+/* Professional Team Section */
+#professional {
+	padding: 100px 10%;
+	text-align: center;
+	margin-top: -64px;
+}
+.professional-title {
+	margin-bottom: 30px;
+}
+.professional-subtitle {
+	font-size: 22px;
+	font-weight: 600;
+	color: #ff64ae;
+	margin-bottom: 4px;
+	letter-spacing: 0.1rem;
+}
+.professional-heading {
+	font-size: 48px;
+	font-weight: 700;
+	color: #091156;
+	margin-bottom: 20px;
+	letter-spacing: 0.1rem;
+}
+.professional-description {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #8b8b8b;
+	margin: 0 auto;
+	letter-spacing: 0.1rem;
+}
+
 
 /* Responsive styles */
 @media (max-width: 1024px) {
@@ -436,6 +468,21 @@ header {
 		width: 100%;
 		min-width: 350px;
 		max-height: 300px;
+	}
+	#professional {
+		margin-top: 20px;
+		padding: 80px 5%;
+	}
+	.professional-subtitle {
+		font-size: 20px;
+	}
+	.professional-heading {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+	.professional-description {
+		font-size: 18px;
+		line-height: 26px;
 	}
 }
 
@@ -542,6 +589,21 @@ header {
 	.about-image img {
 		max-width: 100%;
 	}
+	
+	#professional {
+		padding: 60px 20px;
+	}
+	.professional-subtitle {
+		font-size: 18px;
+	}
+	.professional-heading {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	.professional-description {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -608,5 +670,20 @@ header {
 		max-width: 100%;
 		height: auto;
 		margin-top: 20px;
+	}
+
+	#professional {
+		padding: 40px 15px;
+	}
+	.professional-subtitle {
+		font-size: 16px;
+	}
+	.professional-heading {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.professional-description {
+		font-size: 14px;
+		line-height: 22px;
 	}
 }
