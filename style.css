@@ -9,7 +9,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.6;
-	background: url('./assets/bubble_bg.svg') no-repeat top left;
+	background: url('./assets/bubble_header_bg.svg') no-repeat top left;
 	background-size: contain;
 	background-size: 88%;
 }
