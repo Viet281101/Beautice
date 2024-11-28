@@ -68,6 +68,7 @@ header {
 	line-height: 1rem;
 	font-weight: 600;
 	letter-spacing: 0.12rem;
+	cursor: pointer;
 }
 .contact-button:hover {
 	background-color: #e05497;
@@ -104,8 +105,8 @@ header {
 	letter-spacing: 0.12rem;
 }
 #hero button {
-	width: 14vw;
-	height: 8vh;
+	width: 260px;
+	height: 80px;
 	padding: 1rem 2rem;
 	background-color: #ff64ae;
 	color: #fff;
@@ -190,6 +191,48 @@ header {
 	margin: 0 auto;
 	text-align: center;
 }
+/* Service Box */
+.services-boxes {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 110px;
+	padding: 0 198px;
+	gap: 40px;
+}
+.service-box {
+	background-color: #ffffff;
+	border-radius: 50px;
+	box-shadow: 0px 12px 36px #f6f7ff;
+	padding: 60px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	flex: 1;
+	max-width: 460px;
+}
+.service-box:hover {
+	transform: translateY(-13px);
+	box-shadow: 0px 16px 48px #f6f7ff;
+}
+.service-icon img {
+	width: 220px;
+	height: 220px;
+	margin-top: 17px;
+	margin-bottom: 66px;
+}
+.service-title {
+	font-size: 24px;
+	font-weight: 600;
+	color: #091156;
+	margin-bottom: 25px;
+}
+.service-desc {
+	font-size: 20px;
+	font-weight: 400;
+	color: #8b8b8b;
+	line-height: 28px;
+	letter-spacing: 0.09rem;
+	margin-bottom: 30px;
+}
 
 
 /* Responsive styles */
@@ -214,6 +257,30 @@ header {
 		line-height: 28px;
 		letter-spacing: 0.1rem;
 		max-width: 800px;
+	}
+	.services-boxes {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		padding: 0 50px;
+	}
+	.service-box {
+		max-width: 100%;
+		padding: 50px;
+	}
+	.service-icon img {
+		width: 180px;
+		height: 180px;
+		margin-bottom: 50px;
+	}
+	.service-title {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.service-desc {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -279,6 +346,27 @@ header {
 		letter-spacing: 0.08rem;
 		max-width: 600px;
 	}
+	.services-boxes {
+		padding: 0 30px;
+		gap: 20px;
+	}
+	.service-box {
+		padding: 40px;
+	}
+	.service-icon img {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 40px;
+	}
+	.service-title {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.service-desc {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -299,5 +387,26 @@ header {
 		line-height: 20px;
 		letter-spacing: 0.05rem;
 		max-width: 100%;
+	}
+	.services-boxes {
+		padding: 0 15px;
+		gap: 15px;
+	}
+	.service-box {
+		padding: 30px;
+	}
+	.service-icon img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 30px;
+	}
+	.service-title {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.service-desc {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
 	}
 }
