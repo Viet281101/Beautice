@@ -1,0 +1,239 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6;
+	background: url('./assets/bubble_bg.svg') no-repeat top left;
+	background-size: contain;
+	background-size: 88%;
+}
+
+header {
+	width: 80%;
+	margin: 41px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+
+.logo img {
+	width: 18vw;
+	height: auto;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+	margin-top: 0.9rem;
+	margin-left: 0.8rem;
+}
+
+.main-menu {
+	flex-grow: 1;
+	margin-left: 12%;
+	margin-right: 2%;
+}
+.main-menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 100%;
+}
+.main-menu ul li a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	line-height: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.12rem;
+	color: #8b8b8b;
+}
+.main-menu ul li a:hover {
+	color: #ff64ae;
+}
+.main-menu ul li a.active {
+	color: #414880;
+}
+
+.contact-button {
+	width: 11vw;
+	height: 7vh;
+	border-radius: 50px;
+	border: none;
+	background-color: #ff64ae;
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.12rem;
+}
+.contact-button:hover {
+	background-color: #e05497;
+}
+
+
+#hero {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10%;
+	margin-top: 168px;
+	gap: 2.6rem;
+}
+.hero-container {
+	width: 50%;
+	text-align: left;
+}
+#hero h1 {
+	font-size: 4.3rem;
+	font-weight: 600;
+	line-height: 4.5rem;
+	color: #091156;
+	margin-bottom: 1.25rem;
+}
+#hero p {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #091156;
+	margin-bottom: 2.45rem;
+	line-height: 1.8rem;
+	letter-spacing: 0.12rem;
+}
+#hero button {
+	width: 14vw;
+	height: 8vh;
+	padding: 1rem 2rem;
+	background-color: #ff64ae;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0.12rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	box-shadow: 0px 17px 22px rgba(255, 237, 246, 0.8);
+}
+#hero button:hover {
+	background-color: #e05497;
+	box-shadow: 0px 17px 22px rgba(255, 237, 246, 1);
+}
+.hero-image {
+	width: 52%;
+	text-align: right;
+}
+.hero-image img {
+	width: 100%;
+	height: auto;
+}
+
+.slide-button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+.slide-button .bar {
+	width: 20px;
+	height: 4px;
+	background-color: #eee;
+	border-radius: 10px;
+	transition: background-color 0.3s ease, width 0.3s ease;
+}
+.slide-button .bar.active {
+	background-color: #414880;
+	width: 32px;
+	height: 10px;
+}
+
+
+/* Services Section */
+#services {
+	margin-top: 18rem;
+	padding: 100px 0;
+	text-align: center;
+}
+.services-title {
+	margin-bottom: 50px;
+}
+.services-subtitle {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #ff64ae;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.services-heading {
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 45px;
+	color: #091156;
+	margin-bottom: 20px;
+}
+.services-description {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #8b8b8b;
+	letter-spacing: 0.1rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main-menu ul {
+		flex-direction: column;
+		gap: 15px;
+	}
+	.contact-button {
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	#hero {
+		flex-direction: column;
+		height: auto;
+		padding: 0 5%;
+	}
+	#hero h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	.hero-content, .hero-image {
+		width: 100%;
+		text-align: center;
+	}
+	.hero-image img {
+		width: 100%;
+		margin: 20px auto;
+	}
+	#hero button {
+		width: auto;
+		height: auto;
+		padding: 0.8rem 1.5rem;
+		font-size: 1rem;
+	}
+	.slide-button {
+		position: relative;
+		bottom: auto;
+		margin-top: 1rem;
+		justify-content: center;
+	}
+}
