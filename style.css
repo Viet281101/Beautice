@@ -447,6 +447,115 @@ header {
 }
 
 
+/* Contact Section */
+#contact {
+	position: relative;
+	background: url('./assets/bubble_contact_bg.svg') no-repeat top left;
+	background-size: 80%;
+	padding: 150px 10%;
+	margin-top: -186px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contact-container {
+	width: 100%;
+}
+.contact-content {
+	margin-top: 130px;
+	display: flex;
+	align-items: center;
+	gap: 134px;
+}
+.contact-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact-image img {
+	margin-top: 50px;
+	min-width: 700px;
+	width: 100%;
+	object-fit: cover;
+}
+.contact-form-container {
+	flex: 1;
+	text-align: left;
+}
+.contact-title {
+	margin-bottom: 40px;
+}
+.contact-subtitle {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ff64ae;
+	margin-bottom: 15px;
+}
+.contact-heading {
+	font-size: 48px;
+	font-weight: 600;
+	color: #091156;
+	line-height: 1.2;
+	margin-bottom: 28px;
+}
+.contact-description {
+	font-size: 22px;
+	color: #8b8b8b;
+	line-height: 28px;
+	letter-spacing: 0.1rem;
+	margin-bottom: 68px;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.form-row {
+	display: flex;
+	gap: 48px;
+}
+.form-row input {
+	flex: 1;
+	max-width: 320px;
+}
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	height: 82px;
+	padding: 30px;
+	font-size: 22px;
+	color: #c5c5c5;
+	letter-spacing: 0.1rem;
+	border: 1.5px solid #d9ddfe;
+	border-radius: 20px;
+	margin-bottom: 31px;
+}
+.contact-form textarea {
+	resize: none;
+	height: 318px;
+	margin-bottom: 52px;
+}
+.send-button {
+	width: 330px;
+	height: 78px;
+	background-color: #ff64ae;
+	color: #fff;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 50px;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	box-shadow: 0px 8px 16px rgba(255, 100, 174, 0.3);
+	transition: all 0.3s ease;
+}
+.send-button:hover {
+	background-color: #e05497;
+	box-shadow: 0px 12px 24px rgba(224, 84, 151, 0.3);
+}
+
+
 /* Responsive styles */
 @media (max-width: 1024px) {
 	#services {
@@ -558,6 +667,7 @@ header {
 	}
 	.pro-box {
 		padding: 90px 50px;
+		z-index: 2;
 	}
 	.pro-avatar {
 		width: 160px;
@@ -580,6 +690,59 @@ header {
 		width: 48px;
 		height: 48px;
 		padding: 8px;
+	}
+
+	#contact {
+		padding: 100px 5%;
+		background-size: 100%;
+	}
+	.contact-content {
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
+	.contact-image img {
+		min-width: 500px;
+		margin-top: 20px;
+	}
+	.contact-form-container {
+		width: 100%;
+		text-align: center;
+	}
+	.contact-title {
+		margin-bottom: 20px;
+	}
+	.contact-heading {
+		font-size: 36px;
+		margin-bottom: 16px;
+	}
+	.contact-description {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+	.contact-form {
+		width: 100%;
+	}
+	.form-row {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.form-row input {
+		max-width: 100%;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		height: 40px;
+		margin-bottom: 5px;
+		border-radius: 10px;
+	}
+	.contact-form textarea {
+		height: 200px;
+		margin-bottom: 40px;
+	}
+	.send-button {
+		width: 100%;
 	}
 }
 
@@ -730,6 +893,34 @@ header {
 		height: 40px;
 		padding: 6px;
 	}
+
+	.contact-content {
+		gap: 40px;
+	}
+	.contact-image img {
+		width: 80%;
+		max-width: 340px;
+		margin-top: 10px;
+	}
+	.contact-heading {
+		font-size: 28px;
+	}
+	.contact-description {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 16px;
+		padding: 10px;
+	}
+	.contact-form textarea {
+		height: 150px;
+	}
+	.send-button {
+		font-size: 20px;
+		padding: 10px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -835,5 +1026,34 @@ header {
 		width: 36px;
 		height: 36px;
 		padding: 4px;
+	}
+
+	#contact {
+		padding: 60px 5%;
+	}
+	.contact-content {
+		gap: 30px;
+	}
+	.contact-image img {
+		max-width: 300px;
+	}
+	.contact-heading {
+		font-size: 24px;
+	}
+	.contact-description {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 14px;
+		padding: 8px;
+	}
+	.contact-form textarea {
+		height: 120px;
+	}
+	.send-button {
+		font-size: 18px;
+		padding: 8px;
 	}
 }
