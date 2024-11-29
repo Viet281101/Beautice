@@ -377,6 +377,74 @@ header {
 	margin: 0 auto;
 	letter-spacing: 0.1rem;
 }
+/* Professional Team Boxes */
+.professional-boxes {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	margin-top: 155px;
+}
+.pro-box {
+	flex: 1;
+	background-color: #ffffff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 110px 70px;
+	transition: all 0.3s ease;
+	box-shadow: none;
+}
+.pro-box.active {
+	transform: scale(1.02);
+	box-shadow: 0px 12px 36px rgba(91, 91, 91, 0.2);
+	transition: all 0.3s ease;
+}
+.pro-avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 68px;
+}
+.pro-role {
+	font-size: 22px;
+	font-weight: 600;
+	color: #ff64ae;
+	margin-bottom: 8px;
+}
+.pro-name {
+	font-size: 24px;
+	font-weight: 700;
+	color: #091156;
+	margin-bottom: 22px;
+}
+.pro-desc {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0.1rem;
+	color: #8b8b8b;
+	margin-bottom: 70px;
+}
+.pro-social {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	margin-bottom: 20px;
+}
+.pro-social img {
+	width: 56px;
+	height: 56px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #f8f8f8;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.pro-social img:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 
 /* Responsive styles */
@@ -483,6 +551,35 @@ header {
 	.professional-description {
 		font-size: 18px;
 		line-height: 26px;
+	}
+	.professional-boxes {
+		gap: 40px;
+		margin-top: 120px;
+	}
+	.pro-box {
+		padding: 90px 50px;
+	}
+	.pro-avatar {
+		width: 160px;
+		height: 160px;
+		margin-bottom: 50px;
+	}
+	.pro-role {
+		font-size: 18px;
+	}
+	.pro-name {
+		font-size: 20px;
+		margin-bottom: 18px;
+	}
+	.pro-desc {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 50px;
+	}
+	.pro-social img {
+		width: 48px;
+		height: 48px;
+		padding: 8px;
 	}
 }
 
@@ -604,6 +701,35 @@ header {
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.professional-boxes {
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 100px;
+	}
+	.pro-box {
+		padding: 80px 40px;
+	}
+	.pro-avatar {
+		width: 140px;
+		height: 140px;
+		margin-bottom: 40px;
+	}
+	.pro-role {
+		font-size: 16px;
+	}
+	.pro-name {
+		font-size: 18px;
+	}
+	.pro-desc {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 40px;
+	}
+	.pro-social img {
+		width: 40px;
+		height: 40px;
+		padding: 6px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -685,5 +811,29 @@ header {
 	.professional-description {
 		font-size: 14px;
 		line-height: 22px;
+	}
+	.pro-box {
+		padding: 60px 30px;
+	}
+	.pro-avatar {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 30px;
+	}
+	.pro-role {
+		font-size: 14px;
+	}
+	.pro-name {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.pro-desc {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.pro-social img {
+		width: 36px;
+		height: 36px;
+		padding: 4px;
 	}
 }
