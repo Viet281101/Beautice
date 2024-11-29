@@ -204,8 +204,7 @@ header {
 .service-box {
 	background-color: #ffffff;
 	border-radius: 50px;
-	/* box-shadow: 10px 24px 72px #f6f7ff; */
-	box-shadow: 0px 12px 36px rgba(91, 91, 91, 0.1);
+	box-shadow: 0px 30px 90px rgba(246, 247, 255, 1);
 	padding: 60px;
 	text-align: center;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -214,9 +213,8 @@ header {
 	z-index: 2;
 }
 .service-box:hover {
-	transform: translateY(-13px);
-	/* box-shadow: 10px 32px 96px #f6f7ff; */
-	box-shadow: 0px 16px 48px rgba(91, 91, 91, 0.15);
+	transform: translateY(-15px);
+	box-shadow: 0px 50px 150px rgba(246, 247, 255, 1);
 }
 .service-icon img {
 	width: 220px;
