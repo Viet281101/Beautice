@@ -92,9 +92,13 @@ header {
 #hero h1 {
 	font-size: 4.3rem;
 	font-weight: 600;
-	line-height: 4.5rem;
+	line-height: 5rem;
+	letter-spacing: 0.012rem;
+	font-size: 66px;
 	color: #091156;
-	margin-bottom: 1.25rem;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-bottom: 10px;
 }
 #hero p {
 	font-size: 1.3rem;
@@ -102,7 +106,8 @@ header {
 	color: #091156;
 	margin-bottom: 2.45rem;
 	line-height: 1.8rem;
-	letter-spacing: 0.12rem;
+	letter-spacing: 0.1rem;
+	margin-left: 8px;
 }
 #hero button {
 	width: 260px;
@@ -717,6 +722,38 @@ header {
 	width: 100%;
 	z-index: -1;
 }
+/* To Top Button */
+.to-top {
+	position: fixed;
+	bottom: 230px;
+	right: 90px;
+	width: 48px;
+	height: 48px;
+	background-color: #ff64ae;
+	border-radius: 6px;
+	box-shadow: 0px 8px 16px rgba(255, 100, 174, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	z-index: 10;
+}
+.to-top img {
+	width: 26px;
+	height: 26px;
+}
+.to-top:hover {
+	background-color: #e05497;
+	box-shadow: 0px 12px 24px rgba(224, 84, 151, 0.3);
+}
+.to-top.show {
+	opacity: 1;
+	visibility: visible;
+}
+
 
 
 /* Responsive styles */
