@@ -87,11 +87,10 @@ header {
 	text-align: left;
 }
 #hero h1 {
-	font-size: 4.3rem;
+	font-size: 66px;
 	font-weight: 600;
 	line-height: 5rem;
 	letter-spacing: 0.012rem;
-	font-size: 66px;
 	color: #091156;
 	margin-top: 6px;
 	margin-left: 8px;
@@ -125,15 +124,9 @@ header {
 	background-color: #e05497;
 	box-shadow: 0px 17px 22px rgba(255, 237, 246, 1);
 }
-.hero-image {
-	width: 52%;
-	text-align: right;
-}
-.hero-image img {
-	width: 100%;
-	height: auto;
-}
-
+.hero-image { width: 52%; text-align: right; }
+.hero-image img { width: 100%; height: auto; }
+/* Slide Button */
 .slide-button {
 	position: relative;
 	bottom: 20px;
@@ -197,6 +190,7 @@ header {
 .services-boxes {
 	display: flex;
 	justify-content: space-between;
+	grid-template-columns: repeat(3, 1fr);
 	margin-top: 110px;
 	padding: 0 198px;
 	gap: 40px;
@@ -752,6 +746,142 @@ header {
 
 
 /* Responsive styles */
+@media (max-width: 1440px) {
+	/* Header */
+	header {
+		width: 80%;
+		margin: 26px auto;
+	}
+	.logo img {
+		width: 255px;
+		height: auto;
+		margin-top: 0.9rem;
+		margin-left: 0;
+	}
+	.main-menu {
+		margin-left: 180px;
+		margin-right: 38px;
+	}
+	.main-menu ul li a {
+		font-size: 18px;
+		line-height: 1rem;
+		font-weight: 600;
+		letter-spacing: 0.04rem;
+	}
+	.contact-button {
+		width: 170px;
+		height: 54px;
+		font-size: 18px;
+		line-height: 1rem;
+		font-weight: 600;
+	}
+	/* Hero Section */
+	#hero {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10%;
+		margin-top: 168px;
+		gap: 2.6rem;
+	}
+	.hero-container {
+		width: 50%;
+		text-align: left;
+	}
+	#hero h1 {
+		font-size: 50px;
+		font-weight: 600;
+		line-height: 60px;
+		letter-spacing: 0.002rem;
+		margin-top: -48px;
+		margin-left: 36px;
+		margin-bottom: 8px;
+	}
+	#hero p {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 2.45rem;
+		line-height: 24px;
+		letter-spacing: 0.03rem;
+		margin-left: 40px;
+	}
+	#hero button {
+		margin-left: 40px;
+		width: 200px;
+		height: 60px;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.12rem;
+	}
+	.hero-image { margin-top: -24px; }
+	/* Slide Button */
+	.slide-button { transform: translateY(9.4rem); gap: 0.4rem; }
+	.slide-button .bar { width: 16px; height: 4px; }
+	.slide-button .bar.active { width: 28px; height: 8px; }
+	/* Services Section */
+	#services {
+		margin-top: 10rem;
+		padding: 100px 0;
+	}
+	.services-title {
+		margin-bottom: 50px;
+	}
+	.services-subtitle {
+		font-size: 21px;
+		font-weight: 600;
+		line-height: 20px;
+		margin-bottom: 22px;
+	}
+	.services-heading {
+		font-size: 46px;
+		font-weight: 600;
+		line-height: 60px;
+		letter-spacing: 0.1rem;
+		margin-bottom: 26px;
+	}
+	.services-description {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px;
+		letter-spacing: 0.13rem;
+		max-width: 1110px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	/* Service Box */
+	.services-boxes {
+		margin-top: 110px;
+		padding: 0 198px;
+		gap: 40px;
+	}
+	.service-box {
+		border-radius: 50px;
+		padding: 60px;
+		max-width: 460px;
+	}
+	.service-icon img {
+		width: 220px;
+		height: 220px;
+		margin-top: 17px;
+		margin-bottom: 66px;
+	}
+	.service-title {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 25px;
+	}
+	.service-desc {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0.09rem;
+		margin-bottom: 30px;
+	}
+}
+
+
 @media (max-width: 1024px) {
 	#services {
 		padding: 80px 20px;
