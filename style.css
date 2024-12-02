@@ -257,7 +257,6 @@ header {
 .about-heading {
 	font-size: 48px;
 	font-weight: 700;
-	line-height: 1.2;
 	color: #091156;
 	margin-bottom: 20px;
 }
@@ -830,11 +829,11 @@ header {
 	.service-icon img {
 		width: 164px;
 		margin-top: -26px;
-		margin-bottom: 18px;
+		margin-bottom: 20px;
 	}
 	.service-title {
 		font-size: 18px;
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 	.service-desc {
 		font-size: 14px;
@@ -842,6 +841,68 @@ header {
 		line-height: 22px;
 		letter-spacing: 0.09rem;
 		margin-bottom: 0;
+	}
+	/* About Section */
+	#about {
+		padding: 150px 10%;
+		margin-top: -336px;
+	}
+	.about-content {
+		margin-left: 8px;
+		margin-top: 142px;
+		gap: 40px;
+	}
+	.about-subtitle {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 2px;
+	}
+	.about-heading {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 14px;
+	}
+	.about-description {
+		width: 90%;
+		margin-top: 0;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: 0.1rem;
+		margin-bottom: 24px;
+	}
+	.about-actions {
+		margin-top: 50px;
+		line-height: 32px;
+		letter-spacing: 0.1rem;
+	}
+	.about-btn {
+		width: 200px;
+		height: 60px;
+		font-size: 16px;
+		letter-spacing: 0.1rem;
+		font-weight: 600;
+	}
+	.about-video {
+		gap: 10px;
+	}
+	.about-video .play-icon {
+		margin-left: 44px;
+		width: 48px;
+		height: 48px;
+	}
+	.about-video p {
+		margin-left: 4px;
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 0.01rem;
+	}
+	.about-image img {
+		margin-top: 56px;
+		width: 90%;
+		max-width: 650px;
+		max-height: 470px;
+		border-radius: 60px;
 	}
 }
 
