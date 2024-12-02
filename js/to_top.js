@@ -2,7 +2,7 @@
 class ToTopButton {
 	constructor(buttonId) {
 		this.toTopBtn = document.getElementById(buttonId);
-		this.threshold = 0.8;
+		this.threshold = 0.9;
 		this.init();
 	}
 

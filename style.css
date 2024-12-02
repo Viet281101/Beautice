@@ -819,32 +819,29 @@ header {
 	}
 	/* Service Box */
 	.services-boxes {
-		margin-top: 110px;
-		padding: 0 198px;
-		gap: 40px;
+		margin-top: 82px;
+		padding: 0 150px;
+		gap: 50px;
 	}
 	.service-box {
 		border-radius: 50px;
 		padding: 60px;
-		max-width: 460px;
 	}
 	.service-icon img {
-		width: 220px;
-		height: 220px;
-		margin-top: 17px;
-		margin-bottom: 66px;
+		width: 164px;
+		margin-top: -26px;
+		margin-bottom: 18px;
 	}
 	.service-title {
-		font-size: 24px;
-		font-weight: 600;
-		margin-bottom: 25px;
+		font-size: 18px;
+		margin-bottom: 20px;
 	}
 	.service-desc {
-		font-size: 20px;
-		font-weight: 400;
-		line-height: 28px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 22px;
 		letter-spacing: 0.09rem;
-		margin-bottom: 30px;
+		margin-bottom: 0;
 	}
 }
 
@@ -1277,6 +1274,8 @@ header {
 	.footer-bottom-bar {
 		height: 150px;
 	}
+
+	.to-top { right: 70px; }
 }
 
 @media (max-width: 480px) {
