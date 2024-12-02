@@ -193,7 +193,7 @@ header {
 .service-box {
 	background-color: #ffffff;
 	border-radius: 50px;
-	box-shadow: 0px 30px 90px rgba(246, 247, 255, 1);
+	box-shadow: 0px 35px 100px rgba(246, 247, 255, 1);
 	padding: 60px;
 	text-align: center;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,7 +203,7 @@ header {
 }
 .service-box:hover {
 	transform: translateY(-15px);
-	box-shadow: 0px 50px 150px rgba(246, 247, 255, 1);
+	box-shadow: 0px 60px 180px rgba(246, 247, 255, 1);
 }
 .service-icon img {
 	width: 220px;
