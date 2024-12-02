@@ -82,10 +82,7 @@ header {
 	margin-top: 168px;
 	gap: 2.6rem;
 }
-.hero-container {
-	width: 50%;
-	text-align: left;
-}
+.hero-container { width: 50%; text-align: left; }
 #hero h1 {
 	font-size: 66px;
 	font-weight: 600;
@@ -158,9 +155,7 @@ header {
 	padding: 100px 0;
 	text-align: center;
 }
-.services-title {
-	margin-bottom: 50px;
-}
+.services-title { margin-bottom: 50px; }
 .services-subtitle {
 	font-size: 21px;
 	font-weight: 600;
@@ -776,25 +771,13 @@ header {
 		font-weight: 600;
 	}
 	/* Hero Section */
-	#hero {
-		position: relative;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 10%;
-		margin-top: 168px;
-		gap: 2.6rem;
-	}
-	.hero-container {
-		width: 50%;
-		text-align: left;
-	}
+	#hero { margin-top: 168px; gap: 2.6rem; }
+	.hero-container { width: 50%; }
 	#hero h1 {
 		font-size: 50px;
 		font-weight: 600;
 		line-height: 60px;
-		letter-spacing: 0.002rem;
+		letter-spacing: 0;
 		margin-top: -48px;
 		margin-left: 36px;
 		margin-bottom: 8px;
@@ -821,34 +804,18 @@ header {
 	.slide-button .bar { width: 16px; height: 4px; }
 	.slide-button .bar.active { width: 28px; height: 8px; }
 	/* Services Section */
-	#services {
-		margin-top: 10rem;
-		padding: 100px 0;
-	}
-	.services-title {
-		margin-bottom: 50px;
-	}
-	.services-subtitle {
-		font-size: 21px;
-		font-weight: 600;
-		line-height: 20px;
-		margin-bottom: 22px;
-	}
+	#services { margin-top: 10rem; padding: 100px 0; }
+	.services-subtitle { font-size: 16px; margin-bottom: 14px; }
 	.services-heading {
-		font-size: 46px;
-		font-weight: 600;
-		line-height: 60px;
-		letter-spacing: 0.1rem;
-		margin-bottom: 26px;
+		font-size: 33px;
+		line-height: 44px;
+		margin-bottom: 20px;
 	}
 	.services-description {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 32px;
-		letter-spacing: 0.13rem;
-		max-width: 1110px;
-		margin: 0 auto;
-		text-align: center;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.1rem;
+		max-width: 860px;
 	}
 	/* Service Box */
 	.services-boxes {
