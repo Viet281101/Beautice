@@ -836,11 +836,11 @@ header {
 		margin-bottom: 18px;
 	}
 	.service-desc {
-		font-size: 14px;
+		font-size: 13px;
 		font-weight: 500;
 		line-height: 22px;
-		letter-spacing: 0.09rem;
-		margin-bottom: 0;
+		letter-spacing: 0.07rem;
+		margin-bottom: 5px;
 	}
 	/* About Section */
 	#about {
@@ -849,7 +849,7 @@ header {
 	}
 	.about-content {
 		margin-left: 8px;
-		margin-top: 142px;
+		margin-top: 210px;
 		gap: 40px;
 	}
 	.about-subtitle {
@@ -866,9 +866,9 @@ header {
 		width: 90%;
 		margin-top: 0;
 		font-size: 18px;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 24px;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.01rem;
 		margin-bottom: 24px;
 	}
 	.about-actions {
@@ -881,28 +881,76 @@ header {
 		height: 60px;
 		font-size: 16px;
 		letter-spacing: 0.1rem;
-		font-weight: 600;
 	}
-	.about-video {
-		gap: 10px;
-	}
-	.about-video .play-icon {
-		margin-left: 44px;
-		width: 48px;
-		height: 48px;
-	}
+	.about-video .play-icon { margin-left: 43px; width: 48px; height: 48px; }
 	.about-video p {
 		margin-left: 4px;
 		font-size: 18px;
-		font-weight: 500;
 		letter-spacing: 0.01rem;
 	}
 	.about-image img {
-		margin-top: 56px;
-		width: 90%;
-		max-width: 650px;
-		max-height: 470px;
-		border-radius: 60px;
+		margin-top: 60px;
+		max-width: 540px;
+		max-height: 360px;
+	}
+
+	/* Professional Team Section */
+	#professional {
+		padding: 100px 10%;
+		margin-top: -120px;
+	}
+	.professional-title {
+		margin-bottom: 30px;
+	}
+	.professional-subtitle {
+		font-size: 16px;
+		margin-bottom: 6px;
+		letter-spacing: 0.01rem;
+	}
+	.professional-heading {
+		font-size: 32px;
+		margin-bottom: 16px;
+		letter-spacing: 0.1rem;
+	}
+	.professional-description { font-size: 16px; }
+	/* Professional Team Boxes */
+	.professional-boxes {
+		gap: 60px;
+		margin-top: 155px;
+	}
+	.pro-box {
+		padding: 110px 70px;
+	}
+	.pro-avatar {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 68px;
+	}
+	.pro-role {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+	.pro-name {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 22px;
+	}
+	.pro-desc {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 28px;
+		letter-spacing: 0.1rem;
+		margin-bottom: 70px;
+	}
+	.pro-social {
+		gap: 60px;
+		margin-bottom: 20px;
+	}
+	.pro-social img {
+		width: 56px;
+		height: 56px;
+		padding: 10px;
 	}
 }
 
