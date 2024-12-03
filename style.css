@@ -755,7 +755,7 @@ header {
 	}
 	.main-menu {
 		margin-left: 180px;
-		margin-right: 38px;
+		margin-right: 20px;
 	}
 	.main-menu ul li a {
 		font-size: 18px;
@@ -764,9 +764,9 @@ header {
 		letter-spacing: 0.04rem;
 	}
 	.contact-button {
-		width: 170px;
+		width: 160px;
 		height: 54px;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1rem;
 		font-weight: 600;
 	}
@@ -777,18 +777,18 @@ header {
 		font-size: 50px;
 		font-weight: 600;
 		line-height: 60px;
-		letter-spacing: 0;
-		margin-top: -48px;
-		margin-left: 36px;
+		letter-spacing: -0.07rem;
+		margin-top: -50px;
+		margin-left: 39px;
 		margin-bottom: 8px;
 	}
 	#hero p {
 		font-size: 18px;
 		font-weight: 500;
-		margin-bottom: 2.45rem;
+		margin-bottom: 34px;
 		line-height: 24px;
-		letter-spacing: 0.03rem;
-		margin-left: 40px;
+		letter-spacing: 0.042rem;
+		margin-left: 39px;
 	}
 	#hero button {
 		margin-left: 40px;
@@ -943,11 +943,13 @@ header {
 	.contact-subtitle {
 		font-size: 18px;
 		font-weight: 600;
+		letter-spacing: -0.07rem;
 		margin-bottom: 8px;
 	}
 	.contact-heading {
 		font-size: 38px;
 		font-weight: 600;
+		letter-spacing: -0.07rem;
 		line-height: 1.2;
 		margin-bottom: 18px;
 	}
